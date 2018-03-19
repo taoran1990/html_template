@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var concat = require("gulp-concat");
 
 gulp.task('serve', ['html', 'js', 'sass', 'watch'], function(){
-	var server = gls.static('docs', 4000); 
+	var server = gls.static('docs', 3000); 
 	server.start();
 
 
@@ -18,14 +18,14 @@ gulp.task('serve', ['html', 'js', 'sass', 'watch'], function(){
 
 function js(){
 	return gulp.src('src/js/**/*.js')
-				.pipe(uglify())
+//				.pipe(uglify())
 				.pipe(concat("main.js"))
 				.pipe(gulp.dest('docs/js'))
 }
 
 function html(){
-	return gulp.src('src/*.html').pipe(gulp.dest('docs/'));
-		gulp.src('src/html/*.html').pipe(gulp.dest('docs/html'));
+	gulp.src('src/*.html').pipe(gulp.dest('docs/'));
+	return gulp.src('src/html/*.html').pipe(gulp.dest('docs/html'));
 }
 
 function css(){
@@ -50,10 +50,6 @@ gulp.task('watch', function(){
 
 	gulp.watch('src/js/**/*.js', function(){
 		js();
-	});
-
-	gulp.watch('src/**/*.html', function(){
-		html();
 	});
 
 	gulp.watch('src/sass/**/*.scss', function(){

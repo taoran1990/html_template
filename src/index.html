@@ -6,8 +6,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Template </title>
 		<link href="css/main.css" rel="stylesheet">
+		<link href="lib/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
+
+		<div id="app">
+			<router-link to="/login">
+				Login
+			</router-link>
+
+			<router-link to="/register">
+				Register
+			</router-link>
+
+			<router-view></router-view>
+		</div>
+
+		<script src="lib/jquery-3.2.1.slim.min.js"></script>
+		<script src="lib/popper.min.js"></script>
+		<script src="lib/bootstrap.min.js"></script>
+
+		<script src="lib/vue_v2.4.4.js"></script>
+		<script src="lib/vue-router_v2.7.0.js"></script>
+		<script src="lib/vuex_v2.4.1.js"></script>
 
 		<script src="js/main.js"></script>
 	</body>
