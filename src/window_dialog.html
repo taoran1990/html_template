@@ -16,22 +16,25 @@
 			.cus-modal-header{
 				padding: .5rem;
 			}
-			.cus-alert-modal{
-				background-color: #2980B9;
+			.cus-dialog-modal{
+				background-color: #27AE60;
 				color: #ECF0F1;
 			}
 			.cus-modal-body p{
 				text-align: center;
 				margin: 0rem;
 			}
+			.cus-modal-input-field{
+				border-top: 1px solid #e9ecef;
+				padding: .5rem;
+			}
+			.cus-modal-input-field textarea{
+				width: 100%;
+				resize: none;
+			}
 			.cus-modal-footer{
 				padding: .5rem;
 			}
-			.cus-modal-title{
-				text-align: center;
-				width: 100%
-			}
-	
 		</style>
 
 		<script>
@@ -48,10 +51,10 @@
 		<div class="modal-content">
 		<!-- modal content begin -->
 
-		<div class="modal-header cus-modal-header cus-alert-modal">
+		<div class="modal-header cus-modal-header cus-dialog-modal">
 		<!-- modal head begin -->
 
-		<h5 class="modal-title cus-modal-title">注意</h5>
+		<h5 class="modal-title cus-modal-title">晓萍</h5>
 
 		<!--
 		<button type="button" class="close" data-dismiss="modal"
@@ -65,17 +68,20 @@
 
 		<div class="modal-body cus-modal-body">
 		<!-- modal body begin -->
-		<p>您的操作将产生不确定结果!</p>
+		<p>Modal body text goes here.</p>
 		<!-- modal body end   -->
 		</div>
 
+		<div class="modal-body cus-modal-body cus-modal-input-field">
+			<textarea rows="5"></textarea>
+		</div>
+
+
 		<div class="modal-footer cus-modal-footer">
 		<!-- modal footer begin -->
-		<button type="button" class="btn btn-primary">知道了</button>
-		<!--
-		<button type="button" class="btn btn-secondary"
-							data-dismiss="modal">Close</button>
-		-->
+		<button type="button" class="btn btn-success">发送信息</button>
+		<button type="button" class="btn btn-danger"
+							data-dismiss="modal">关闭窗口</button>
 		<!-- modal footer end   -->
 		</div>
 
