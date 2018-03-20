@@ -9,14 +9,67 @@
 		<link href="lib/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<div>
-			login
+		<style>
+			body{
+				background-color: #34495E; 
+			}
+			.login-form{
+				width: 300px;
+				margin: 200px auto auto auto;
+			}
+			.cus-form-title{
+				text-align: center;
+				margin-bottom: 40px;
+				letter-spacing: .3rem;
+			}
+			.cus-checkbox-row{
+				margin: 20px auto 10px auto;
+			}
+			.cus-login-button{
+				width: 100%;
+			}
+			.login-form{
+				padding: 20px 20px;
+				box-sizing: content-box;
+				background-color: #ECF0F1;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-moz-border-radius: 5px;
+			}
+
+		
+		</style>
+
+		<script>
+		
+		</script>
+
+		<div id="app">
+			<form class="login-form">
+				<div class="form-group">
+					<h2 class="cus-form-title">帐号登录</h2>
+				</div>
+				<div class="form-group">
+					<input type="text" 		 class="form-control"  placeholder="帐号" />
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control"  placeholder="密码" />
+				</div>
+				<div class="form-group cus-checkbox-row">
+					<label class="form-check-label">记住我</label>
+					<input type="checkbox" />
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary cus-login-button" 
+									value="登录" />
+				</div>
+			</form>
 		</div>
 
-
-		<script src="/lib/jquery-3.2.1.slim.min.js"></script>
-		<script src="/lib/popper.min.js"></script>
-		<script src="/lib/bootstrap.min.js"></script>
+		<script src="lib/jquery-3.2.1.slim.min.js"></script>
+		<script src="lib/popper.min.js"></script>
+		<script src="lib/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
