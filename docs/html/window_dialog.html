@@ -42,6 +42,7 @@
 			.cus-message-wraper{
 				width: 100%;
 				overflow: auto;
+				padding: .5rem;
 			}
 			.cus-message{
 				border-radius: 5px;
@@ -51,7 +52,6 @@
 				display: inline-block;
 				color: white;
 				padding: .5rem;
-				margin: .5rem;
 				min-width: 150px;
 				max-width: 300px;
 			}
@@ -59,8 +59,26 @@
 				background-color: #3ECC71;
 				float: right;
 			}
+			.cus-avater-header{
+				display: inline-block;
+			}
 			.cus-received{
 				background-color: #3498DB;
+			}
+			.cus-avatar{
+				width: 2rem;
+				margin: .2rem;
+				vertical-align: baseline;
+			}
+			.cus-head-title{
+				padding: .5rem;
+				float: left;
+			}
+			.cus-avatar-sender{
+				float: right;
+			}
+			.cus-avatar-receiver{
+				float: left;
 			}
 		</style>
 
@@ -81,7 +99,12 @@
 		<div class="modal-header cus-modal-header cus-dialog-modal">
 		<!-- modal head begin -->
 
+		<img src="/img/avater_2.jpg" class="cus-avatar cus-avatar-header" >
+		<!--
 		<h5 class="modal-title cus-modal-title">晓萍</h5>
+		-->
+
+		<div class="cus-head-title">晓萍</div>
 
 		<!--
 		<button type="button" class="close" data-dismiss="modal"
@@ -100,18 +123,22 @@
 		<!-- cus modal content begin -->
 
 		<div class="cus-message-wraper">
+			<img src="/img/avater_1.jpg" class="cus-avatar cus-avatar-sender" >
 		<div class="cus-message cus-sended">吃了吗?</div>
 		</div>
 
 		<div class="cus-message-wraper">
+			<img src="/img/avater_2.jpg" class="cus-avatar cus-avatar-receiver" >
 		<div class="cus-message cus-received">吃了.</div>
 		</div>
 
 		<div class="cus-message-wraper">
+			<img src="/img/avater_1.jpg" class="cus-avatar cus-avatar-sender" >
 		<div class="cus-message cus-sended">明天你去吗?</div>
 		</div>
 
 		<div class="cus-message-wraper">
+			<img src="/img/avater_2.jpg" class="cus-avatar cus-avatar-receiver" >
 		<div class="cus-message cus-received">去</div>
 		</div>
 
