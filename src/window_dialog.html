@@ -20,9 +20,12 @@
 				background-color: #27AE60;
 				color: #ECF0F1;
 			}
-			.cus-modal-body p{
-				text-align: center;
-				margin: 0rem;
+			.cus-modal-body{
+				padding: .5rem;
+			}
+			.cus-modal-content{
+				border: 1px solid #e9ecef;
+				min-height: 200px;
 			}
 			.cus-modal-input-field{
 				border-top: 1px solid #e9ecef;
@@ -31,9 +34,33 @@
 			.cus-modal-input-field textarea{
 				width: 100%;
 				resize: none;
+				border: 1px solid #e9ecef;
 			}
 			.cus-modal-footer{
 				padding: .5rem;
+			}
+			.cus-message-wraper{
+				width: 100%;
+				overflow: auto;
+			}
+			.cus-message{
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-moz-border-radius: 5px;
+				display: inline-block;
+				color: white;
+				padding: .5rem;
+				margin: .5rem;
+				min-width: 150px;
+				max-width: 300px;
+			}
+			.cus-sended{
+				background-color: #3ECC71;
+				float: right;
+			}
+			.cus-received{
+				background-color: #3498DB;
 			}
 		</style>
 
@@ -68,12 +95,35 @@
 
 		<div class="modal-body cus-modal-body">
 		<!-- modal body begin -->
-		<p>Modal body text goes here.</p>
+
+		<div class="cus-modal-content">
+		<!-- cus modal content begin -->
+
+		<div class="cus-message-wraper">
+		<div class="cus-message cus-sended">吃了吗?</div>
+		</div>
+
+		<div class="cus-message-wraper">
+		<div class="cus-message cus-received">吃了.</div>
+		</div>
+
+		<div class="cus-message-wraper">
+		<div class="cus-message cus-sended">明天你去吗?</div>
+		</div>
+
+		<div class="cus-message-wraper">
+		<div class="cus-message cus-received">去</div>
+		</div>
+
+		<!-- cus modal content end   -->
+		</div>
+	
+
 		<!-- modal body end   -->
 		</div>
 
 		<div class="modal-body cus-modal-body cus-modal-input-field">
-			<textarea rows="5"></textarea>
+			<textarea rows="3"></textarea>
 		</div>
 
 
