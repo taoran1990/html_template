@@ -13,7 +13,62 @@
 			body{
 				background-color: #EFEFEF; 
 			}
-		
+			#headbar_section{
+				position: absolute;
+				height: 70px;
+				left: 0px;
+				right: 0px;
+				background-color: #95A5A6; 
+			}
+			#sidebar_section{
+				position: absolute;
+				top: 70px;
+				bottom: 0px;
+				width: 250px;
+				padding: .2rem;
+				border-right: 2px solid #BDC3C7;
+				overflow: hidden;
+			}
+			#content_section{
+				position: absolute;
+				top: 70px;
+				left: 252px;
+				right: 0px;
+				bottom: 0px;
+			}
+			.cus-menu-ul{
+				list-style: none;
+				padding: 0rem;
+				margin: 0rem;
+				padding: 2px;
+			}
+			.cus-menu-title{
+				text-align: center;
+				padding: .5rem 0rem;
+				background-color: white;
+			}
+			.cus-menu-li{
+				padding: .1rem;
+				margin: 0rem 0rem 0rem 0rem;
+				border-top: 1px solid #7F8C8D;
+				border-left: 1px solid #7F8C8D;
+				border-right: 1px solid #7F8C8D;
+			}
+			.cus-menu-li:last-child{
+				border-bottom: 1px solid #7F8C8D;
+			}
+			.cus-sub-menu-ul{
+				list-style: none;
+				padding: 0rem;
+				margin: 0rem;
+			}
+			.cus-sub-menu-li{
+				padding: 0rem;
+				margin: 0rem;
+				background-color: #EFEFEF;
+				text-align: center;
+				margin: 0px 1px;
+			}
 		</style>
 
 		<script>
@@ -21,6 +76,82 @@
 		</script>
 
 		<div id="app">
+
+			<div id="headbar_section">
+				<nav class="navbar navbar-light" style="background-color: #E3F2FD;">
+					<!-- nav begin -->
+					<div class="content">
+						<a class="navbar-brand" href="#">Navbar</a>
+					</div>
+
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search"
+										placeholder="Search" aria-label="Search">
+										<button class="btn btn-outline-success my-2 my-sm-0">search</button>
+					</form>
+
+
+					<!-- nav end   -->
+				</nav>
+			</div>
+
+			<div id="sidebar_section">
+				<ul class="cus-menu-ul">
+
+					<!-- li begin -->
+					<li class="cus-menu-li cus-menu-acitve">
+						<div class="cus-menu-title">Menu 1</div>
+						<ul class="cus-sub-menu-ul">
+							<li class="cus-sub-menu-li">Sub Menu 1<li>
+							<li class="cus-sub-menu-li">Sub Menu 2<li>
+							<li class="cus-sub-menu-li">Sub Menu 3<li>
+							<li class="cus-sub-menu-li">Sub Menu 4<li>
+						</ul>
+					</li>
+					<!-- li end   -->
+
+					<!-- li begin -->
+					<li class="cus-menu-li">
+						<div class="cus-menu-title">Menu 2</div>
+						<ul class="cus-sub-menu-ul">
+							<li class="cus-sub-menu-li">Sub Menu 1<li>
+							<li class="cus-sub-menu-li">Sub Menu 2<li>
+							<li class="cus-sub-menu-li">Sub Menu 3<li>
+							<li class="cus-sub-menu-li">Sub Menu 4<li>
+						</ul>
+					</li>
+					<!-- li end   -->
+
+					<!-- li begin -->
+					<li class="cus-menu-li">
+						<div class="cus-menu-title">Menu 3</div>
+						<ul class="cus-sub-menu-ul">
+							<li class="cus-sub-menu-li">Sub Menu 1<li>
+							<li class="cus-sub-menu-li">Sub Menu 2<li>
+							<li class="cus-sub-menu-li">Sub Menu 3<li>
+							<li class="cus-sub-menu-li">Sub Menu 4<li>
+						</ul>
+					</li>
+					<!-- li end   -->
+
+					<!-- li begin -->
+					<li class="cus-menu-li">
+						<div class="cus-menu-title">Menu 4</div>
+						<ul class="cus-sub-menu-ul">
+							<li class="cus-sub-menu-li">Sub Menu 1<li>
+							<li class="cus-sub-menu-li">Sub Menu 2<li>
+							<li class="cus-sub-menu-li">Sub Menu 3<li>
+							<li class="cus-sub-menu-li">Sub Menu 4<li>
+						</ul>
+					</li>
+					<!-- li end   -->
+
+				</ul>
+
+			</div>
+			<div id="content_section">
+			
+			</div>
 		</div>
 
 		<script src="lib/jquery-3.2.1.slim.min.js"></script>
