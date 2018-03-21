@@ -61,6 +61,7 @@
 			}
 			.cus-avater-header{
 				display: inline-block;
+				float: left;
 			}
 			.cus-received{
 				background-color: #3498DB;
@@ -68,11 +69,17 @@
 			.cus-avatar{
 				width: 2rem;
 				margin: .2rem;
-				vertical-align: baseline;
+				vertical-align: middle;
+
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-moz-border-radius: 5px;
 			}
 			.cus-head-title{
-				padding: .5rem;
 				float: left;
+				vertical-align: top;
+				display: inline-block;
 			}
 			.cus-avatar-sender{
 				float: right;
@@ -99,12 +106,14 @@
 		<div class="modal-header cus-modal-header cus-dialog-modal">
 		<!-- modal head begin -->
 
-		<img src="/img/avater_2.jpg" class="cus-avatar cus-avatar-header" >
 		<!--
 		<h5 class="modal-title cus-modal-title">晓萍</h5>
 		-->
 
-		<div class="cus-head-title">晓萍</div>
+		<div class="cus-head-title">
+		<img src="/img/avater_2.jpg" class="cus-avatar cus-avatar-header" >
+		晓萍
+		</div>
 
 		<!--
 		<button type="button" class="close" data-dismiss="modal"
