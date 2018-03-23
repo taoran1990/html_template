@@ -45,8 +45,8 @@
 			}
 			.cus_nav{
 				padding: .9rem 1rem;
-				background-color: #dfe2e1 !important; 
-				border-bottom: 2px solid #d0cdce;
+				background-color: #f5f5f5 !important; 
+				//border-bottom: 2px solid #d0cdce;
 			}
 			#sidebar_section{
 				position: absolute;
@@ -64,45 +64,45 @@
 				right: 0px;
 				bottom: 0px;
 			}
-			.cus-menu-ul{
-				list-style: none;
-				padding: 0rem;
-				margin: 0rem;
-				padding: 2px;
+			.cus-menu{
+				border: 1px solid #efefef;
+				border-top-right-radius: 5px;
+				-webkit-border-top-right-radius: 5px;
+				-ms-border-top-right-radius: 5px;
+				-moz-border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				-webkit-border-top-left-radius: 5px;
+				-ms-border-top-left-radius: 5px;
+				-moz-border-top-left-radius: 5px;
+				margin-bottom: .2rem;
 			}
 			.cus-menu-title{
-				text-align: center;
-				padding: .3rem 0rem;
-				background-color: #4a4a48;
-				color: #dcdcdc;
-				cursor: pointer;
-				font-size: 1.4rem;
+				font-size: 1.2rem;
+				padding: 0.75rem 1.25rem;
+				color: white;
+				background-color: #3498DB;
 			}
-			.cus-menu-li{
-				padding: .1rem;
-				margin: 0rem 0rem .2rem 0rem;
-				border: 1px solid #7f8c8d;
-			}
-			.cus-menu-li:last-child{
-				border-bottom: 1px solid #7F8C8D;
-			}
-			.cus-sub-menu-ul{
-				list-style: none;
-				padding: 0rem;
-				margin: 0rem;
+			.cus-menu-content{
 				display: none;
 			}
-			.cus-menu-ul .active{
+			.cus-menu-content-active{
 				display: block;
 			}
-			.cus-sub-menu-li{
-				padding: .3rem 0rem;
-				text-align: center;
-				margin: .2rem .1rem;
-				background-color: #e2e7ea;
-				color: #404040;
-				font-size: .8rem;
+			.list-group-item{
+				border-radius: 0px !important;
+				-webkit-border-radius: 0px !important;
+				-ms-border-radius: 0px !important;
+				-moz-border-radius: 0px !important;
+				padding-left: 3rem;
+				cursor: pointer;
 			}
+			.cus-list-group-item-active{
+				background-color: #cce5ff !important;
+			}
+			.cus-list-group-item-active:hover{
+				background-color: #cce5ff !important;
+			}
+
 		</style>
 
 		<script>
@@ -147,60 +147,38 @@
 				</nav>
 			</div>
 
+			<!-- sidebar section begin -->
 			<div id="sidebar_section">
-				<ul class="cus-menu-ul">
 
-					<!-- li begin -->
-					<li class="cus-menu-li">
-						<div class="cus-menu-title">Menu 1</div>
-						<ul class="cus-sub-menu-ul active">
-							<li class="cus-sub-menu-li">Sub Menu 1<li>
-							<li class="cus-sub-menu-li">Sub Menu 2<li>
-							<li class="cus-sub-menu-li">Sub Menu 3<li>
-							<li class="cus-sub-menu-li">Sub Menu 4<li>
+				<div class="cus-menu">
+					<div class="cus-menu-title">Menu 1</div>
+					<div class="cus-menu-content cus-menu-content-active">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-action cus-list-group-item-active">Sub Menu Item 1</li>
+							<li class="list-group-item list-group-item-action">Sub Menu Item 2</li>
+							<li class="list-group-item list-group-item-action">Sub Menu Item 3</li>
+							<li class="list-group-item list-group-item-action">Sub Menu Item 4</li>
 						</ul>
-					</li>
-					<!-- li end   -->
+					</div>
+				</div>
 
-					<!-- li begin -->
-					<li class="cus-menu-li">
-						<div class="cus-menu-title">Menu 2</div>
-						<ul class="cus-sub-menu-ul">
-							<li class="cus-sub-menu-li">Sub Menu 1<li>
-							<li class="cus-sub-menu-li">Sub Menu 2<li>
-							<li class="cus-sub-menu-li">Sub Menu 3<li>
-							<li class="cus-sub-menu-li">Sub Menu 4<li>
+				<div class="cus-menu">
+					<div class="cus-menu-title">Menu 2</div>
+					<div class="cus-menu-content">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-action">Sub Menu Item 1</li>
+							<li class="list-group-item list-group-item-action">Sub Menu Item 2</li>
+							<li class="list-group-item list-group-item-action">Sub Menu Item 3</li>
+							<li class="list-group-item list-group-item-action">Sub Menu Item 4</li>
 						</ul>
-					</li>
-					<!-- li end   -->
+					</div>
+				</div>
 
-					<!-- li begin -->
-					<li class="cus-menu-li">
-						<div class="cus-menu-title">Menu 3</div>
-						<ul class="cus-sub-menu-ul">
-							<li class="cus-sub-menu-li">Sub Menu 1<li>
-							<li class="cus-sub-menu-li">Sub Menu 2<li>
-							<li class="cus-sub-menu-li">Sub Menu 3<li>
-							<li class="cus-sub-menu-li">Sub Menu 4<li>
-						</ul>
-					</li>
-					<!-- li end   -->
 
-					<!-- li begin -->
-					<li class="cus-menu-li">
-						<div class="cus-menu-title">Menu 4</div>
-						<ul class="cus-sub-menu-ul">
-							<li class="cus-sub-menu-li">Sub Menu 1<li>
-							<li class="cus-sub-menu-li">Sub Menu 2<li>
-							<li class="cus-sub-menu-li">Sub Menu 3<li>
-							<li class="cus-sub-menu-li">Sub Menu 4<li>
-						</ul>
-					</li>
-					<!-- li end   -->
-
-				</ul>
 
 			</div>
+			<!-- sidebar section end   -->
+
 			<div id="content_section">
 			
 			</div>
